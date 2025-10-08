@@ -6,6 +6,4 @@ import './global.css'
 const rootEl = document.getElementById('page-view')
 const props = window.__PAGE_PROPS__ || {}
 
-ReactDOM.hydrateRoot
-  ? ReactDOM.hydrateRoot(rootEl, <Page {...props} />)
-  : ReactDOM.createRoot(rootEl).render(<Page {...props} />)
+ReactDOM.createRoot(rootEl).render(<Page {...props} />)
